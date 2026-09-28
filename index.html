@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarra Ranges Content Creation Club - Social Media Support for Small Biz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { light: '#4f46e5', DEFAULT: '#4338ca', dark: '#3730a3' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-extrabold text-brand tracking-tight">Content Creation Club</h1>
+            <a href="https://www.facebook.com/groups/contentcreationclubchirnsidepark" target="_blank" class="text-brand hover:text-brand-dark font-semibold text-sm md:text-base">
+                <i class="fab fa-facebook mr-1"></i> Join Group
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-brand text-white py-16 md:py-20 text-center px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">Overwhelmed by Social Media? Let’s Make it Enjoyable Together.</h2>
+            <p class="text-lg md:text-xl text-indigo-100 mb-8 max-w-3xl mx-auto">We know social media is vital, but it shouldn't feel like a chore. Join our local Yarra Ranges and Chirnside Park community to get the support, inspiration, and hands-on help you need to help your small business thrive.</p>
+        </div>
+    </section>
+
+    <!-- Three Options Section -->
+    <section class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow">
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- Option 1: DIY -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden flex flex-col border border-gray-100">
+                <!-- 4:5 Aspect Ratio Image -->
+                <img src="images/yarra-ranges-chirnside-park-social-media-content-creation-club.png" alt="Do it yourself" class="w-full aspect-[4/5] object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <span class="text-xs font-bold tracking-wider text-blue-600 uppercase mb-1">Free</span>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">1. Do It Yourself</h3>
+                    <div class="text-gray-600 mb-6 flex-grow text-sm leading-relaxed space-y-3">
+                        <p>Join our supportive Facebook community dedicated to local Yarra Ranges business owners.</p>
+                        <p>We share regular ideas, algorithm updates, reel strategies, and content planning tips so we can all succeed together online.</p>
+                        <p>Ask questions, share your wins, get feedback on your posts, and network with peers who understand the local market.</p>
+                    </div>
+                    <a href="https://www.facebook.com/groups/contentcreationclubchirnsidepark" target="_blank" class="mt-auto block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded transition duration-200">
+                        Join Free Facebook Group
+                    </a>
+                </div>
+            </div>
+
+            <!-- Option 2: DWY -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden flex flex-col border border-gray-100">
+                <!-- 4:5 Aspect Ratio Image -->
+                <img src="images/yarra-ranges-chirnside-park-social-media-content-help.png" alt="Do it with us" class="w-full aspect-[4/5] object-cover object-top">
+                <div class="p-6 flex-grow flex flex-col">
+                    <span class="text-xs font-bold tracking-wider text-brand uppercase mb-1">Collaborate</span>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">2. Do It With Us</h3>
+                    <div class="text-gray-600 mb-6 flex-grow space-y-4 text-sm leading-relaxed">
+                        <p>Combine our expertise with your passion. Perfect for business owners who want hands-on guidance.</p>
+                        <div>
+                            <strong class="text-gray-800 block mb-1">Free Monthly Club:</strong> 
+                            Every 2nd Saturday (9am–1pm). Bring your products and your phone! We brainstorm, shoot content, and collaborate. <em>(Strictly limited to 12 places per month).</em>
+                        </div>
+                        <div>
+                            <strong class="text-gray-800 block mb-1">Private Studio Booking:</strong> 
+                            $275 (inc GST). Hire our professional Chirnside Park studio for 2 hours. Includes access to lighting, backdrops, equipment, and our personal guidance to help you capture perfect shots.
+                        </div>
+                    </div>
+                    <div class="space-y-3 mt-auto">
+                        <button onclick="openModal('clubModal')" class="w-full border-2 border-brand text-brand hover:bg-brand hover:text-white font-bold py-2 px-4 rounded transition">
+                            Book Free Monthly Club
+                        </button>
+                        <button onclick="openModal('studioModal')" class="w-full bg-brand hover:bg-brand-dark text-white font-bold py-2 px-4 rounded transition">
+                            Book Studio Session ($275)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Option 3: DFY -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden flex flex-col border border-gray-100">
+                <!-- 4:5 Aspect Ratio Image -->
+                <img src="images/yarra-ranges-chirnside-park-social-media-content-support.png" alt="We do it for you" class="w-full aspect-[4/5] object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <span class="text-xs font-bold tracking-wider text-gray-900 uppercase mb-1">Done For You</span>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">3. We Do It For You</h3>
+                    <div class="text-gray-600 mb-6 flex-grow text-sm leading-relaxed space-y-3">
+                        <p>Take social media completely off your plate so you can focus on running your business.</p>
+                        <p>Simply drop off your products at our Chirnside Park studio, and we'll handle the magic. We provide professional styling, perfect lighting, and expert shooting.</p>
+                        <p>We then edit the raw files into high-quality, ready-to-post photos and highly engaging 10-second videos tailored specifically to your brand's aesthetic.</p>
+                    </div>
+                    <button onclick="openModal('calculatorModal')" class="mt-auto w-full bg-gray-900 hover:bg-black text-white font-bold py-3 px-4 rounded transition">
+                        Calculate Custom Quote
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+        <p>&copy; 2026 Content Creation Club Chirnside Park & Yarra Ranges.</p>
+    </footer>
+
+    <!-- ================= MODALS ================= -->
+
+    <!-- 1. Free Club Modal -->
+    <div id="clubModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-[100] px-4">
+        <div class="bg-white rounded-xl shadow-2xl max-w-md w-full p-6 relative">
+            <button onclick="closeModal('clubModal')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800"><i class="fas fa-times text-xl"></i></button>
+            <h3 class="text-2xl font-bold mb-1">Free Monthly Club</h3>
+            <p class="text-xs text-red-600 font-bold mb-4"><i class="fas fa-exclamation-circle"></i> Strictly 12 spots available per month</p>
+            
+            <form onsubmit="handleFormSubmit(event, 'Free Monthly Club')">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-xs font-bold mb-1">Name</label>
+                    <input type="text" name="name" required class="w-full p-2 border rounded outline-none focus:border-brand">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-xs font-bold mb-1">Email</label>
+                    <input type="email" name="email" required class="w-full p-2 border rounded outline-none focus:border-brand">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-xs font-bold mb-1">Select Date (2nd Saturday, 9am - 1pm)</label>
+                    <select name="month" required class="w-full p-2 border rounded outline-none focus:border-brand">
+                        <option value="">Choose a date...</option>
+                        <option value="October 10th 2026">October 10th, 2026</option>
+                        <option value="November 14th 2026">November 14th, 2026</option>
+                        <option value="December 12th 2026">December 12th, 2026</option>
+                        <option value="January 9th 2027">January 9th, 2027</option>
+                        <option value="February 13th 2027">February 13th, 2027</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn w-full bg-brand text-white font-bold py-2.5 px-4 rounded hover:bg-brand-dark transition">Reserve My Spot</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 2. Studio Hire Modal -->
+    <div id="studioModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-[100] px-4">
+        <div class="bg-white rounded-xl shadow-2xl max-w-md w-full p-6 relative">
+            <button onclick="closeModal('studioModal')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800"><i class="fas fa-times text-xl"></i></button>
+            <h3 class="text-2xl font-bold mb-1">Book Studio Session</h3>
+            <p class="text-gray-600 text-xs mb-4">$275 (inc GST) • 2 hours in Chirnside Park studio with equipment & guidance.</p>
+            
+            <form onsubmit="handleFormSubmit(event, 'Studio Booking ($275)')">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-xs font-bold mb-1">Name / Business Name</label>
+                    <input type="text" name="name" required class="w-full p-2 border rounded outline-none focus:border-brand">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-xs font-bold mb-1">Email</label>
+                    <input type="email" name="email" required class="w-full p-2 border rounded outline-none focus:border-brand">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-xs font-bold mb-1">Preferred Date</label>
+                    <input type="date" name="preferredDate" required class="w-full p-2 border rounded outline-none focus:border-brand">
+                </div>
+                <button type="submit" class="submit-btn w-full bg-brand text-white font-bold py-2.5 px-4 rounded hover:bg-brand-dark transition">Request Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 3. DFY Quote Calculator Modal -->
+    <div id="calculatorModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-[100] px-4 overflow-y-auto py-8">
+        <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full p-6 relative m-auto">
+            <button onclick="closeModal('calculatorModal')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800"><i class="fas fa-times text-xl"></i></button>
+            <h3 class="text-2xl font-bold mb-1">We Do It For You</h3>
+            <p class="text-gray-600 text-xs mb-4">Select your requirements for an instant price estimate.</p>
+            
+            <form id="dfyForm" oninput="calculateCost()" onsubmit="handleFormSubmit(event, 'DFY Custom Quote')">
+                <div class="grid grid-cols-2 gap-3 mb-3">
+                    <div>
+                        <label class="block text-gray-700 text-xs font-bold mb-1">Name</label>
+                        <input type="text" name="name" required class="w-full p-2 border rounded outline-none focus:border-brand">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-xs font-bold mb-1">Email</label>
+                        <input type="email" name="email" required class="w-full p-2 border rounded outline-none focus:border-brand">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="block text-gray-700 text-xs font-bold mb-1">Number of products?</label>
+                    <input type="number" id="calc-products" name="products" min="1" value="1" class="w-full p-2 border rounded outline-none focus:border-brand">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 mb-3">
+                    <div>
+                        <label class="block text-gray-700 text-xs font-bold mb-1">Photos per product?</label>
+                        <input type="number" id="calc-photos" name="photos" min="0" value="1" class="w-full p-2 border rounded outline-none focus:border-brand">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-xs font-bold mb-1">10s Videos per product?</label>
+                        <input type="number" id="calc-videos" name="videos" min="0" value="0" class="w-full p-2 border rounded outline-none focus:border-brand">
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="flex items-center space-x-2 bg-gray-50 p-2.5 rounded border cursor-pointer">
+                        <input type="checkbox" id="calc-editing" name="includesEditing" checked class="h-4 w-4 text-brand rounded">
+                        <span class="text-xs font-bold text-gray-700">Include Professional Editing</span>
+                    </label>
+                </div>
+
+                <div class="bg-indigo-50 border border-indigo-100 rounded p-3 text-center mb-4">
+                    <p class="text-xs text-gray-500 mb-0.5">Estimated Cost:</p>
+                    <div id="calc-result" class="text-3xl font-extrabold text-brand">$97.00</div>
+                    <p id="calc-note" class="text-[11px] text-gray-500 mt-1">Rate: $97/photo • $175/10s video</p>
+                </div>
+
+                <button type="submit" class="submit-btn w-full bg-gray-900 text-white font-bold py-2.5 px-4 rounded hover:bg-black transition">
+                    Submit Project Details
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        let currentCalculatedTotal = "$97.00";
+
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+            document.getElementById(id).classList.add('flex');
+            if(id === 'calculatorModal') calculateCost();
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+            document.getElementById(id).classList.remove('flex');
+        }
+
+        function calculateCost() {
+            const products = parseInt(document.getElementById('calc-products').value) || 0;
+            const photos = parseInt(document.getElementById('calc-photos').value) || 0;
+            const videos = parseInt(document.getElementById('calc-videos').value) || 0;
+            const editing = document.getElementById('calc-editing').checked;
+
+            const resultDiv = document.getElementById('calc-result');
+            const noteDiv = document.getElementById('calc-note');
+
+            if (editing) {
+                const totalPhotos = products * photos;
+                const totalVideos = products * videos;
+                const totalCost = (totalPhotos * 97) + (totalVideos * 175);
+                
+                currentCalculatedTotal = `$${totalCost.toLocaleString('en-AU')}.00`;
+                resultDiv.innerText = currentCalculatedTotal;
+                resultDiv.className = "text-3xl font-extrabold text-brand";
+                noteDiv.innerText = "Rate: $97/photo • $175/10s video";
+            } else {
+                currentCalculatedTotal = "Custom Quote (No Editing Selected)";
+                resultDiv.innerText = "Custom Quote";
+                resultDiv.className = "text-2xl font-bold text-gray-500";
+                noteDiv.innerText = "Raw footage rates require a custom quote.";
+            }
+        }
+
+        async function handleFormSubmit(event, formType) {
+            event.preventDefault();
+            const form = event.target;
+            const submitBtn = form.querySelector('.submit-btn');
+            const originalBtnText = submitBtn.innerText;
+
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Sending...';
+
+            const formData = new FormData(form);
+            const payload = {
+                formType,
+                name: formData.get('name'),
+                email: formData.get('email'),
+                month: formData.get('month') || null,
+                preferredDate: formData.get('preferredDate') || null,
+                products: formData.get('products') || null,
+                photos: formData.get('photos') || null,
+                videos: formData.get('videos') || null,
+                includesEditing: formData.get('includesEditing') ? true : false,
+                calculatedTotal: currentCalculatedTotal
+            };
+
+            try {
+                const response = await fetch('/api/send', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    alert('Thank you! Your request has been sent successfully.');
+                    form.reset();
+                    closeModal(form.closest('[id$="Modal"]').id);
+                } else {
+                    alert('Error sending request: ' + (result.error || 'Please try again.'));
+                }
+            } catch (err) {
+                alert('Connection error. Please check your internet connection.');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerText = originalBtnText;
+            }
+        }
+    </script>
+</body>
+</html>
